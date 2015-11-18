@@ -10,8 +10,6 @@ import ru.sbt.test.refactoring.library.location.orientation.Orientation;
  */
 public abstract class Unit {
 
-
-
     private final Location location;
     private final Field field;
 

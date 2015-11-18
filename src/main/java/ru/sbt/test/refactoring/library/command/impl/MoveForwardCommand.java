@@ -14,7 +14,7 @@ public class MoveForwardCommand extends Command {
     public void execute(Unit unit) {
         Location location = unit.getLocation();
         location.setPosition(location.getOrientation().moveForwards(location.getPosition()));
-        if (location.getPosition().getX() > unit.getField().getX() || location.getPosition().getX() < 0 || location.getPosition().getY() > unit.getField().getY() || location.getPosition().getY() < 0) {
+        if (location.getPosition().getX() > unit.getField().getX() || location.getPosition().getY() > unit.getField().getY()) {
             throw new UnitInDitchException();
         }
     }
